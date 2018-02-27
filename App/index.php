@@ -49,7 +49,7 @@
 <script>
 // Redirect dopo 5 secondi
 setTimeout(function() {
-  window.location.href = "/App/getTrattamenti.php";
+  window.location.href = "/trattamenti_web_services/App/getTrattamenti.php";
 }, 4000);
 </script>
         
