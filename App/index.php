@@ -30,7 +30,7 @@
 }
         </style>
         <h1 align="center"> Gallerani </h1>
-        <br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
   <div class="progress skill-bar ">
                 <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                     <span class="skill"></span>
@@ -49,7 +49,7 @@
 <script>
 // Redirect dopo 5 secondi
 setTimeout(function() {
-  window.location.href = "/trattamenti_web_services/App/getTrattamenti.php";
+  window.location.href = "/trattamenti_webservices/App/getTrattamenti.php";
 }, 4000);
 </script>
         
