@@ -1,0 +1,5 @@
+[27-Feb-2018 11:07:04 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): Connection timed out in /home/ubuntu/workspace/App/magazzino.php on line 7
+[27-Feb-2018 11:07:04 UTC] PHP Stack trace:
+[27-Feb-2018 11:07:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/App/magazzino.php:0
+[27-Feb-2018 11:07:04 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/App/magazzino.php:7
+[27-Feb-2018 14:15:28 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ubuntu/workspace/App/magazzino.php on line 13

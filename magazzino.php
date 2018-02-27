@@ -1,10 +1,8 @@
 <?php
-
-$servername = "18.196.155.94";
-$username = "root";
-$password = "edef";
-$dbname = "Gestione_development";
-
+foreach (glob("../config/*.php") as $filename)
+{
+    include $filename;
+}
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection

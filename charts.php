@@ -1,9 +1,9 @@
 <?php
+foreach (glob("config/*.php") as $filename)
+{
+    include $filename;
+}
 
-$servername = "18.196.155.94";
-$username = "root";
-$password = "edef";
-$dbname = "Gestione_development";
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -31,22 +31,7 @@ echo  str_replace('"',"'",str_replace('"}',"}",str_replace('"y":"',"y:",str_repl
 }
 
 
-
-if(strcmp($_REQUEST['query'],"prodotti")==0)
-{
-    
-$sth = mysqli_query($conn,"SELECT  colturas.nome AS Coltura, ROUND(SUM((prezzos.prezzo_fattura-(prezzos.prezzo_fattura*prezzos.sconto/100))*prodotto_trattamentos.dose_ha*colturas.estensione_ha),2) AS Costo,  FROM Gestione_development.colturas, Gestione_development.trattamentos,Gestione_development.prodotto_trattamentos,Gestione_development.prodottos,Gestione_development.prezzos,Gestione_development.attrezzos WHERE Gestione_development.colturas.id=Gestione_development.trattamentos.id_coltura AND Gestione_development.trattamentos.id=Gestione_development.prodotto_trattamentos.id_trattamento AND Gestione_development.prodotto_trattamentos.id_prodotto=Gestione_development.prodottos.id AND Gestione_development.prodottos.id=Gestione_development.prezzos.id_prodotto AND Gestione_development.trattamentos.id_attrezzo=Gestione_development.attrezzos.id GROUP BY Coltura");
-
-    
-    
-    $rows = array();
-while($r = mysqli_fetch_assoc($sth)) {
-    $rows[] = $r;
-}
-print json_encode($rows);
-    
-}
-
+df
 
 
 
