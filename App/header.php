@@ -16,6 +16,30 @@ echo '<nav class="navbar navbar-expand-lg navbar-light bg-light">
       <li class="nav-item">
         <a class="nav-link " href="magazzino.php">Magazzino</a>
       </li>
+       <li class="nav-item">
+        <a class="nav-link " href="Prodotti.php">Prodotti</a>
+        </li>
+         <li class="nav-item">
+        <a class="nav-link " href="Attrezzi.php">Attrezzi</a>
+      
+      </li>
+      
+       <li class="nav-item">
+        <a class="nav-link " href="Carichi.php">Carichi</a>
+      
+      </li>
+       <li class="nav-item">
+        <a class="nav-link " href="Prezzi.php">Prezzi</a>
+      
+      </li>
+       <li class="nav-item">
+        <a class="nav-link " href="Operazioni.php">Operazioni</a>
+      
+      </li>
+       <li class="nav-item">
+        <a class="nav-link " href="Colture.php">Colture</a>
+      
+      </li>
     </ul>
   </div>
 </nav>';
