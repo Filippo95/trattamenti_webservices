@@ -30,7 +30,7 @@ $result = $conn->query($sql);
         
   <?php include("header.php")?>
     <h1>Prodotti </h1>
-	<table id="table" class="table">
+	<table id="table" class="table-responsive">
 	<thead>
 	<th><ID</th>
 	<th>Nome</th>
